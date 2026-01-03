@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <motion.div
       whileHover={{ y: -5, scale: 1.03 }}
-      className="bg-white rounded-xl mt-5 shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+      className="bg-white rounded-xl mt-5 shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 hover:outline-double hover:outline-sky-400"
     >
       <Image
         src={project.image}

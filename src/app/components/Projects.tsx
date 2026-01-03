@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-white">
+    <section id="projects" className="py-24 bg-white dark:bg-slate-700">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center dark:text-white">Projects</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <motion.div
