@@ -1,4 +1,6 @@
 import Image from "next/image";
+import TechBadge from "@/app/components/TechBadge";
+import { Database, Code, Server } from "lucide-react";
 
 export default function About() {
   return (
@@ -25,21 +27,36 @@ export default function About() {
           <div className="col-span-5">
             <div className="ml-5">
               <h2 className="text-3xl font-bold mb-6 dark:text-white">
-                About Me
+                Tentang Saya
               </h2>
 
               <p className="text-gray-700 leading-relaxed dark:text-white">
-                Aku adalah web developer yang fokus membangun web modern, cepat
-                dan responsif. Saat ini aku pake <br />
-                <span className="font-medium">Next JS</span>
-                <span className="font-medium">Laravel</span>
-                <span className="font-medium">Tailwind CSS</span>
+                Saya adalah <span className="font-semibold">Web Developer</span>{" "}
+                dengan pengalaman lebih dari{" "}
+                <span className="font-semibold">1,5 tahun</span>
+                bekerja di{" "}
+                <span className="font-semibold">RS Abdul Radjak</span>. Saya
+                terbiasa mengembangkan dan memelihara aplikasi web yang
+                digunakan langsung dalam lingkungan kerja profesional.
               </p>
 
-              <p className="text-gray-700 leading-relaxed mt-2 dark:text-white">
-                Aku suka belajar teknologi baru, ngulik UI/UX, dan bikin project
-                yang rapi serta mudah digunakan.
+              <p className="text-gray-700 leading-relaxed mt-3 dark:text-white">
+                Saya dikenal sebagai pribadi yang{" "}
+                <span className="font-semibold">cepat beradaptasi</span>,
+                bertanggung jawab, dan memiliki keinginan tinggi untuk terus
+                belajar teknologi baru. Dalam bekerja, saya fokus pada solusi
+                yang rapi, efisien, dan mudah dikembangkan.
               </p>
+
+              <p className="text-gray-700 leading-relaxed mt-3 dark:text-white">
+                Teknologi yang sering saya gunakan:
+              </p>
+
+              <div className="flex flex-wrap gap-4 mt-4">
+                <TechBadge icon={<Database size={18} />} label="SQL Server" />
+                <TechBadge icon={<Code size={18} />} label="Laravel" />
+                <TechBadge icon={<Server size={18} />} label="PostgreSQL" />
+              </div>
             </div>
           </div>
         </div>
